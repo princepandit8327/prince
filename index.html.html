@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        h4 {
+            text-align: center;
+            color: rgb(36, 97, 116);
+            background-color: lightgrey;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        #img1 {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        #nav1 {
+            background-color: rgba(55, 8, 55, 0.923);
+        }
+        
+        #nav1, #nav1 .navbar-brand, #nav1 .nav-link, #nav1 .dropdown-item, #nav1 .navbar-toggler {
+            color: #fff !important;
+        }
+        #nav1 .dropdown-menu {
+            background-color: rgb(222, 218, 222);
+        }
+        
+        .carousel-card-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 1200px; 
+            margin: 0 0 0 0;
+        }
+        #carouselExampleCaptions {
+            width: 900px;
+            height: 500px;
+            margin: 0;
+        }
+        .carousel-inner img {
+            width: 900px !important;
+            height: 500px !important;
+            object-fit: cover;
+            display: block;
+            border-radius: 5%;
+        }
+        .card {
+            margin-left: 20px;
+            height: 500px;
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <h4><b>Welcome Our Game Arena</b></h4>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+        <div class="container-fluid" id="nav1">
+            <img src="data:image/jpeg;base64,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" id="img1" alt="Italian Trulli" style="width:40px;height:40px;">
+            <a class="navbar-brand" href="#">Game Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Reviews
+                        </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Entertainment
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Kids</a></li>
+                            <li><a class="dropdown-item" href="#">3d Game</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">up coming</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit" style ="background-color: black;"><b>Search</b></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel and Card in a single flex container -->
+    <div class="carousel-card-container">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Jason_and_Lucia_01_With_Logos_landscape.jpg" class="d-block w-100" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>GTA VI</h5>
+              <p>Grand Theft Auto 6 is an open-world action-adventure game.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/god-of-war-5-v78grhtfkjsau2lc.jpg" class="d-block w-100" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>GOD OF WAR</h5>
+              <p>A third-person action-adventure game with hack-and-slash and role-playing game (RPG) elements.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/wp7255919-wwe-game-wallpapers.jpg" class="d-block w-100" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>WWE</h5>
+              <p>A professional wrestling sports simulation game.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card" style="height: 250px;">
+        <img src="img/wp4300445-shooter-wallpapers.jpg" class="card-img-top" alt="..."style=width:600px;>
+      </div>
+      <div class="card2" style="margin-top:260px;">
+      <img src="img/hell-is-us-2025-3840x2160-21601.jpg" class="card-img-top" alt="..."style=width:295px;>
+      </div>
+      <div class="card3" style="margin:260px 0 0 10px;">
+      <img src="img/wallpaperflare.com_wallpaper.jpg" class="card-img-top" alt="..."style=width:295px;>
+      </div>
+      </div>
+    </div>
+    <div class="container4" style="display: flex; flex-direction: row; align-items: flex-start;">
+        <div class="card" style="margin:30px 30px 0 10px;">
+            <img src="img/1464420-3840x2160-desktop-4k-gears-5-background.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h6 class="card-title">Suggested</h6>
+                <h4 class="card-title">Gears Of War</h4>
+                <p class="card-text"><i>Experience the iconic original that strarted it all.</i><br><br>
+                    <b>4.2*</b> 2cr Reviews<br> <b>10cr+</b> Download<br><b>5.3 GB</b> Space<br><b><u> $ 29.00 Claim </b></u>  </p>
+                <a href="#" class="btn btn-primary">See detail</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin:30px 0 0 ;">
+            <img src="img/wp11213056-free-fire-8k-wallpapers.jpg" class="card-img-top" alt="..." style="height:550px; width:285px;">
+            <br>
+            <div class="card w-75 mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Garena FREE FIRE</h5>
+                    <p class="card-text">Battle Royal in Battle Style.<br>Free Fire x NARUTO SHIPPUDEN</p>
+                    <a href="#" class="btn btn-primary">Purches.$</a>
+                </div>
+            </div>
+        </div>
+        <div class="card text-center" style="margin:30px 0 0 100px; min-width: 20rem;">
+            <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Try Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Upcoming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Server</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disable</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body"style="background-color:black;">
+                <h5 class="card-title" style="color: #fff; font-style: oblique;">Play Station 5 </h5>
+                <img src="img/wp6031938-wither-wallpapers.jpg" class="card-img-top" alt="..." style="height:300px; width:500px;">
+               <br><br> <a href="https://www.youtube.com/watch?v=MmB9b5njVbA&pp=ygUVbWluZWNyYWZ0IGludHJvIHZpZGVv" class="btn btn-primary">Play</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <br>
+    <footer style="background: #1a1a2e; color: #fff; padding: 40px 0 20px 0; margin-top: 40px;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 style="color:#e94560;">Game Portal</h5>
+                    <p style="font-size: 15px;">Your one-stop destination for the latest games, reviews, and gaming news. Join our community and level up your play!</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 style="color:#e94560;">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Home</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Reviews</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Events</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 style="color:#e94560;">Follow Us</h6>
+                    <a href="#" style="color:#fff; margin:0 10px; font-size: 22px;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" style="width:24px;filter:invert(1);"></a>
+                    <a href="#" style="color:#fff; margin:0 10px; font-size: 22px;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord" style="width:24px;filter:invert(1);"></a>
+                    <a href="#" style="color:#fff; margin:0 10px; font-size: 22px;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" style="width:24px;filter:invert(1);"></a>
+                </div>
+            </div>
+            <hr style="background:#e94560;">
+            <p style="margin:0; font-size: 14px;">&copy; 2025 Game Portal. All rights reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+
+</body>
+
+</html>
